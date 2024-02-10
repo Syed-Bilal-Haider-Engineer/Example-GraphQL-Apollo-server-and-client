@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.eslintcache
+deploy-dev.sh
+deploy-prod.sh
+.eslintcache
+src/views/protected/Event/Map/Map-copy.txt
