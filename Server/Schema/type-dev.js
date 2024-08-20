@@ -1,4 +1,5 @@
 const { gql } = require('apollo-server');
+
 const typeDefs = gql`
   type User {
     id: ID!
@@ -24,17 +25,20 @@ const typeDefs = gql`
     id: ID!
     newUsername: String!
   }
+
   type Mutation {
     createUser(input: InsertUserInput!): User
     updateUsername(input: UpdateUsernameInput!): User
     deleteUser(id: ID!): User
   }
+
   enum Nationality {
     US
     CA
     UK
     AU
     NZ
-  }`;
+  }
+`;
 
 module.exports = { typeDefs };
